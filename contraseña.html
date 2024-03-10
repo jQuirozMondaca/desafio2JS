@@ -9,6 +9,7 @@
 
 <body>
     <h1>Ingresa el password</h1>
+
     <select class="primero" name="" id="">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -45,22 +46,22 @@
         <option value="9">9</option>
     </select>
     <Button onclick="
-         parrafo = document.querySelector('p')
-         contraseña = document.querySelector('.primero' + '.segundo' + '.tercero').value
-         console.log(typeof contraseña)
-        if (contraseña === '9'+'1'+'1') {
+        parrafo = document.querySelector('p')
+        contraseña1 = document.querySelector('.primero').value
+        contraseña2 = document.querySelector('.segundo').value
+        contraseña3 = document.querySelector('.tercero').value
+        clave = (contraseña1)+(contraseña2)+(contraseña3)
+        if (clave === '9'+'1'+'1') {
             parrafo.innerHTML = 'Password 1 correcto'
-        } else if (contraseña == 2) {
-            parrafo.innerHTML = 'adelante'
-        } else {
-            parrafo.innerHTML = 'fuera'
+        } else if (clave === '7'+'1'+'4') {
+            parrafo.innerHTML = 'Password 2 es correto'
+        }else{
+            parrafo.innerHTML = 'Error'
         }
             ">Ingresar</Button>
-    <p>
+    <p></p>
 
-    </p>
-
-    <script src="assets/js/style.js"></script>
+    <script src="assets/js/contraseña.js"></script>
 </body>
 
 </html>
