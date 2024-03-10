@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ingresa el password</h1>
+    <select class="primero" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select class="segundo" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select class="tercero" name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <Button onclick="
+         parrafo = document.querySelector('p')
+         contraseña = document.querySelector('.primero' + '.segundo' + '.tercero').value
+         console.log(typeof contraseña)
+        if (contraseña === '9'+'1'+'1') {
+            parrafo.innerHTML = 'Password 1 correcto'
+        } else if (contraseña == 2) {
+            parrafo.innerHTML = 'adelante'
+        } else {
+            parrafo.innerHTML = 'fuera'
+        }
+            ">Ingresar</Button>
+    <p>
+
+    </p>
+
+    <script src="assets/js/style.js"></script>
+</body>
+
+</html>
