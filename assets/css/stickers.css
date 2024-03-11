@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.img {
+    width: 200px;
+}
+
+p {
+    text-align: center;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

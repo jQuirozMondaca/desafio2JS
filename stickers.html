@@ -5,10 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/stickers.css">
 </head>
 
 <body>
+    <h1>Canjea tus Stikers</h1>
 
+    <h3>Puedes llevar hasta 10 Stickers</h3>
+
+    <div class="logos">
+        <div class="bentley">
+            <img class="img" src="assets/img/bentley.jpg" alt="">
+            <div>
+                <input class="box1" type="" placeholder="Ingrese un numero">
+            </div>
+        </div>
+
+        <div class="corvertte">
+            <img class="img" src="assets/img/corvertte.jpg" alt="">
+            <div>
+                <input class="box2" type="" placeholder="Ingrese un numero">
+            </div>
+        </div>
+
+        <div class="maserati">
+            <img class="img" src="assets/img/maserati.jpg" alt="">
+            <div>
+                <input class="box3" type="" placeholder="Ingrese un numero">
+            </div>
+        </div>
+    </div>
+
+    <p class="text"></p>
+
+    <div class="boton">
+        <button onclick="
+        texto = document.querySelector('.text')
+        caja1 = document.querySelector('.box1').value
+        caja2 = document.querySelector('.box2').value
+        caja3 = document.querySelector('.box3').value
+        total = Number(caja1) + Number(caja2) + Number(caja3)
+        if(total <=10){
+            texto.innerHTML = 'llevas'+ total +'Stikers'
+        }else{
+            texto.innerHTML ='llevas demasiados stickers'
+        }
+        ">Verificar</button>
+
+    </div>
+
+
+    <script src="assets/js/sticker.js"></script>
 </body>
 
 </html>
